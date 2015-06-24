@@ -29,7 +29,9 @@ module.exports = function (src, baton) {
 
     var copy = 'mkdir ' + PKG_BUILD_DIR + " &&" +
                'cp -r ' + _c.ASSETS + "client/images " + PKG_BUILD_DIR + " &&" +
-               'cp -r ' + _c.ASSETS + "client/themes " + PKG_BUILD_DIR;
+               'cp -r ' + _c.ASSETS + "client/themes " + PKG_BUILD_DIR + " &&" +
+               'cp ' + _c.ASSETS + "client/ui.html " + PKG_BUILD_DIR + " && " +
+               'cp ' + _c.ASSETS + "client/*.js " + PKG_BUILD_DIR;
 
     childProcess.exec(copy, function (error/*, stdout, stderr*/) {
         if (error) { throw new Error(error); }
