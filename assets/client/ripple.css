@@ -57,6 +57,22 @@ input, textarea, keygen, select, button, isindex, datagrid {
     top: 7px;
 }
 
+.launch-ui {
+    left: 600px;
+    top: 8px;
+    position: absolute;
+    color: white;
+}
+
+.launch-ui a {
+    font-size: 13px;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
 .main {
     font-size: 12px !important;
     -webkit-user-select: none;
