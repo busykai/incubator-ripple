@@ -9,7 +9,7 @@
         onlineIndicator.style.height = "10px";
         onlineIndicator.style.borderRadius = "50%";
         onlineIndicator.style.backgroundColor = "#f00";
-        onlineIndicator.style.position = "absolute";
+        onlineIndicator.style.position = "fixed";
         onlineIndicator.style.top = "5px";
         onlineIndicator.style.right = "5px";
         onlineIndicator.style.zIndex = "500";
