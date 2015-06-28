@@ -26,11 +26,13 @@
         <script src="/ripple/assets/comm.js"></script>
         <script data-main="/ui/main.js" src="/thirdparty/require.js"></script>
         <link href="/ripple/assets/ripple.css" type="text/css" rel="stylesheet" />
+        <!-- temporarily hard-coded for appearance. also, need to remove all the ui-box-open styles from the widgets below -->
+        <link href="/ripple/assets/themes/light/theme.css" type="text/css" rel="stylesheet" />
     </head>
     <body dir="ltr">
     <section id="left" class="left sortable main">
 <!-- lib/client/ui/plugins/devices -->
-<section id="devices-container" class="ui-box ui-state-default ui-corner-all">
+<section id="devices-container" class="ui-box ui-state-default ui-corner-all ui-box-open">
     <section class="h2 info-header">
         <section class="collapse-handle">Devices</section>
         <section class="drag-handle ui-state-default ui-corner-all ui-state-hover">
@@ -52,7 +54,7 @@
         </table>
     </section>
 </section>
-<section id="platforms-container" class="ui-box ui-state-default ui-corner-all">
+<section id="platforms-container" class="ui-box ui-state-default ui-corner-all ui-box-open">
     <section class="h2 info-header">
         <section class="collapse-handle">Platforms</section>
         <section class="drag-handle ui-state-default ui-corner-all ui-state-hover">
