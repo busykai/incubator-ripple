@@ -22,6 +22,8 @@
 <html>
     <head>
         <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+        <script src="/thirdparty/3d.js"></script>
+        <script src="/thirdparty/draw.js"></script>
         <script src="/thirdparty/ws-rpc/client/wsrpcc.js"></script>
         <script src="/ripple/assets/comm.js"></script>
         <script data-main="/ui/main.js" src="/thirdparty/require.js"></script>
@@ -54,6 +56,7 @@
         </table>
     </section>
 </section>
+<!-- lib/client/ui/plugins/platform -->
 <section id="platforms-container" class="ui-box ui-state-default ui-corner-all ui-box-open">
     <section class="h2 info-header">
         <section class="collapse-handle">Platforms</section>
@@ -78,6 +81,57 @@
         <button id="change-platform" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">
             <span class="ui-button-text">Change Platform</span>
         </button>
+    </section>
+</section>
+
+<!-- lib/client/ui/plugins/accelerator -->
+<section id="accelerometer-container" class="ui-box ui-state-default ui-corner-all ui-box-open">
+    <section class="h2 info-header">
+        <section class="collapse-handle">Accelerometer</section>
+        <section class="drag-handle ui-state-default ui-corner-all ui-state-hover">
+            <span class="ui-icon ui-icon-arrow-4"></span>
+        </section>
+    </section>
+    <!-- <section id="accelerometer" class="info ui-widget-content ui-corner-all" style="display: none;"> -->
+    <section id="accelerometer" class="info ui-widget-content ui-corner-all">
+        <section class="accelerometer-info">
+            <canvas style="display: block;" id="accelerometer-canvas" width="300" height="200" title="Click and drag with the mouse to manipulate the device.Hold the Shift key to modify 'alpha'"></canvas>
+
+            <table class="panel-table">
+                <tr>
+                    <td><label class="ui-text-label" for="accelerometer-x">xAxis:</label></td>
+                    <td><span id="accelerometer-x"></span></td><td>&nbsp;m/s&sup2;</td>
+                </tr>
+                <tr>
+                    <td><label class="ui-text-label" for="accelerometer-y">yAxis:</label></td>
+                    <td><span id="accelerometer-y"></span></td><td>&nbsp;m/s&sup2;</td>
+                </tr>
+                <tr>
+                    <td><label class="ui-text-label" for="accelerometer-z">zAxis:</label></td>
+                    <td><span id="accelerometer-z"></span></td><td>&nbsp;m/s&sup2;</td>
+                </tr>
+                <tr>
+                    <td><label class="ui-text-label" for="accelerometer-alpha">alpha:</label></td>
+                    <td><span id="accelerometer-alpha"></span></td><td>&nbsp;&deg;</td>
+                </tr>
+                <tr>
+                    <td><label class="ui-text-label" for="accelerometer-beta">beta:</label></td>
+                    <td><span id="accelerometer-beta"></span></td><td>&nbsp;&deg;</td>
+                </tr>
+                <tr>
+                    <td><label class="ui-text-label" for="accelerometer-gamma">gamma:</label></td>
+                    <td><span id="accelerometer-gamma"></span></td><td>&nbsp;&deg;</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button id="accelerometer-shake" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">
+                        <span class="ui-button-text">Shake</span>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </section>
     </section>
 </section>
 
