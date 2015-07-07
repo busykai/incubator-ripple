@@ -149,6 +149,37 @@
     </section>
 </section>
 
+<!-- lib/client/ui/plugins/battery-status -->
+<section id="battery-status-container" class="ui-box ui-state-default ui-corner-all ui-box-open">
+    <section class="h2 info-header">
+        <section class="collapse-handle">Battery Status</section>
+        <section class="drag-handle ui-state-default ui-corner-all ui-state-hover">
+            <span class="ui-icon ui-icon-arrow-4"></span>
+        </section>
+    </section>
+
+    <!-- <section class="info ui-widget-content ui-corner-all" style="display: none;"> -->
+    <section class="info ui-widget-content ui-corner-all">
+        <table class="panel-table">
+            <tr id="battery-level-container">
+                <td><span class="ui-text-label">Battery Level</span></td>
+                <td>
+                    <label id="battery-level-label" class="range-label-left">100 %</label>
+                    <input id="battery-level" type="range" value="100" min="0" max="100" class="ui-state-default ui-corner-all">
+                </td>
+            </tr>
+            <tr id="is-plugged-container">
+                <td>
+                    <span class="ui-text-label">Is Plugged</span>
+                </td>
+                <td>
+                    <input id="is-plugged" type="checkbox" />
+                </td>
+            </tr>
+        </table>
+    </section>
+</section>
+
     </section>
 
     </body>
