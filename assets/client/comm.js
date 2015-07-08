@@ -1,4 +1,4 @@
-/*global window: false, console:false, WebSocket: false, document: false, navigator: false, peer: false, wsrpc: false */
+/*global window: false, document: false, wsrpc: false, wsRPCPort: false */
 (function () {
     "use strict";
 
