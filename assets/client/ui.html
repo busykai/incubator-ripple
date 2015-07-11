@@ -180,6 +180,70 @@
     </section>
 </section>
 
+    </section> <!-- left panel -->
+
+    <section class="right sortable main">
+<!-- lib/client/ui/plugins/settings -->
+<section id="settings-container" class="ui-box ui-state-default ui-corner-all ui-box-open">
+    <section class="h2 info-header">
+        <section class="collapse-handle">Settings</section>
+        <section class="drag-handle ui-state-default ui-corner-all ui-state-hover">
+            <span class="ui-icon ui-icon-arrow-4"></span>
+        </section>
+    </section>
+    <!-- <section class="info ui-widget-content ui-corner-all" style="display: none;"> -->
+    <section class="info ui-widget-content ui-corner-all">
+        <table class="panel-table">
+            <tr>
+                <td><label class="ui-text-label">Tooltips</label></td>
+                <td>
+                    <button id="settings-toggletooltips" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">
+                        <span class="ui-button-text">Toggle</span>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td><label class="ui-text-label">Cross Domain Proxy</label></td>
+                <td>
+                    <select id="settings-xhr-proxy" class="ui-state-default ui-corner-all">
+                        <option value="disabled">Disabled</option>
+                        <option value="local">Local</option>
+                        <option value="remote">Remote</option>
+                    </select>
+                </td>
+            </tr>
+            <tr style="display: none">
+                <td><label class="ui-text-label prefix-with-right-arrow">Proxy Route</label></td>
+                <td><input type="text" class="ui-state-default ui-corner-all" id="settings-xhr-proxy-local-route" value=""></td>
+            </tr>
+            <tr style="display: none">
+                <td><label class="ui-text-label prefix-with-right-arrow">Proxy Port</label></td>
+                <td><input type="text" class="ui-state-default ui-corner-all" id="settings-xhr-proxy-local-port" value=""></td>
+            </tr>
+            <tr class="theme-switcher">
+                <td><label class="ui-text-label">Themes</label></td>
+                <td><select id="theme-select" class="ui-state-default ui-corner-all"></select></td>
+            </tr>
+        </table>
+        <section id="remote-proxy-warn" style="display: none">
+            <div class="remote-proxy-warn-icon-container">
+                <div class="remote-proxy-warn-icon-name ui-warn-text-label">Security Note</div>
+                <span class="ui-icon ui-icon-alert"></span>
+            </div>
+            <div id="remote-proxy-warn-message">
+                <h4>
+                    If the app is transferring sensitive data (authentication tokens, credentials etc.), it is strongly recommended  to use 
+                    <span class="ui-warn-text-label">Local</span> proxy instead of the 
+                    <span class="ui-warn-text-label">Remote</span> one.
+                </h4>
+            </div>
+        </section>
+        <hr>
+        <button id="options-menu-about" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">
+            <span class="ui-button-text">About Ripple Emulator</span>
+        </button>
+    </section>
+</section>
     </section>
 
     </body>
